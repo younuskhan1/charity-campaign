@@ -1,33 +1,45 @@
 nav{
-    background-color: #0082e6;
+    /* background: rgba(255, 255, 255, 0.95); */
+    /* background:red; */
     width: 100%;
-    height: auto;
+    height: 90px;
 }
-label.logo {
-    color: white;
-    line-height: 80px;
-    font-size: 35px;
-    padding: 0px 100px;
-    font-weight: bold;
-}
+
 nav ul{
     float: right;
-    margin-right: 20px;
+    margin-right: 100px;
     list-style: none; 
 }
 nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0px 5px;
+   
 }
 nav ul li a{
-    color: white;
     font-size: 17px;
-    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
 }
+
+.icon-image{
+    width: 170px;
+    height: 70px;
+    margin-left: 100px;
+    padding-top: 25px;
+}
+.active{
+    color: #FF444A;
+    transition: .5s;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 .checkBtn{
-    font-size: 35px;
-    color: white;
+    padding-top: 10px;
+    font-size: 30px;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -38,83 +50,41 @@ nav ul li a{
     display: none;
 }
 
-@media (max-width: 426px){
-    label.logo{
-        font-size: 25px;
-        padding: 0px 50px;
+@media (max-width: 769px){ 
+    nav ul{
+        margin-right: 70px;
     }
-    nav ul li a {
-        font-size: 16px;
-    }
-    .checkBtn{
-        display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -10%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0px;
-        line-height: 30px;
-    }
-
-    #check:checked ~ ul{
-        left: 0;
+    .icon-image{
+        margin-left: 70px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .navbar-parent{
+@media (max-width: 426px){ 
+    .icon-image{
+        margin-left: 40px;
+    }
+   .checkBtn{
+    display: block;
+   }
+   ul{
+    position: fixed;
     width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 70px;
-}
-.icon-image{
-    width: 170px;
-    height: 50px;
-}
-.nav-bar-links a{
-    margin-left: 25px;
-    font-size: 18px;
-    font-weight: 400;
-}
-.active{
-  color: #FF444A;
-  transition:.5s;
-}
+    height: 50vh;
+    background: aqua;
+    top: 90px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 30px 0px;
+    line-height: 30px;
+   }
+   nav ul li a{
+    font-size: 20px;
+   }
+   #check:checked ~ ul{
+    left: 0;
+  }
 
-@media screen and (max-width: 426px) {
-    .navbar-parent{
-       flex-direction: column;
-       padding: 50px 20px;
-    }
-   
-    .nav-bar-links a{
-       display: flex;
-       flex-direction: column;
-    }
-  } */
+}
