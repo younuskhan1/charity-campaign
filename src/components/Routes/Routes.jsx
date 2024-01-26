@@ -12,6 +12,7 @@ const myCreatedRoutes = createBrowserRouter([
     children :[
         {
             path : "/",
+            loader: ()=>fetch("/donations.json"),
             element: <Home></Home>
         },
         {

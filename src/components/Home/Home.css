@@ -1,3 +1,28 @@
-/* .home-parent{
-    position: relative;
-} */
+.cards-parent{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0px 30px;
+    margin: 50px 0;
+}
+
+@media (max-width: 1025px){
+    .cards-parent{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px 10px;
+    }      
+}
+
+
+@media (max-width: 769px){
+    .cards-parent{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 10px;
+    }     
+}
+
+@media (max-width: 426px){
+    .cards-parent{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 10px;
+    }      
+}
