@@ -30,10 +30,13 @@ const Donation = () => {
 
 
     return (
-        <div className='selectedElementsParent'>
+        <div>
+            <div className='selectedElementsParent'>
            {
             selectedElements?.map((element,index)=><SelectedDonations key={index} element={element}></SelectedDonations>)
            }
+        </div>
+            <div className="show-all-button-parent"><button className="show-all-button">Show All</button></div>
         </div>
     );
 };
