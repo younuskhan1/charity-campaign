@@ -3,12 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .each-card{
     width: 280px;
     height: 283px;
     border-radius: 8px;
     margin-bottom: 20px;
+    cursor: pointer;
+   
 }
 .card-image{
     width: 100%;

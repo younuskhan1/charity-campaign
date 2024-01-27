@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 
 const Home = () => {
     const donations = useLoaderData();
-    console.log(donations);
+    // console.log(donations);
     return (
         <div className="home-parent">
             <Banner></Banner>
