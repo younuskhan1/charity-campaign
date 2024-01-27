@@ -1,0 +1,87 @@
+.selectedItemsGrandParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selectedItemsParent{
+    display: flex;
+    margin-bottom: 15px;
+}
+.selectedDonationImageDiv{
+    width: 220px;
+    height: 210px;
+}
+.selectedDonationImage{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0px 0px 4px;
+}
+.selectedDonationTextDiv{
+    width: 335px;
+    height: 210px;
+    border-radius: 0px 4px 4px 0px;
+}
+.category-button-div{
+    width: 100%;
+    margin: 10px 0px 15px 10px;
+}
+.category-button{
+    padding: 10px 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.selectedItemTitle{
+    margin: 0px 0px 15px 22px;
+}
+.selectedItemPrice{
+    margin: 0px 0px 15px 22px;
+    font-weight: 700;
+}
+.view-details-button{
+    color: #ffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin: 0px 0px 15px 22px;
+}
+@media (max-width: 1025px){
+    .selectedDonationTextDiv{
+        width: 280px;  
+    }
+    .selectedDonationImageDiv{
+        width: 200px;
+    }
+}
+@media (max-width :769px){
+    .selectedDonationImageDiv{
+        width: 250px;
+    }
+    .selectedDonationTextDiv{
+        width: 400px;
+    }
+}
+@media (max-width: 426px){
+    .selectedItemsGrandParent{
+        display: block;
+    }
+    .selectedItemsParent{
+        flex-direction: column;
+    }
+    .selectedDonationImageDiv{
+        width: 100%;
+        height: 210px;
+    }
+    .selectedDonationImage{
+        width: 100%;
+        height: 100%;
+        border-radius: 4px 4px 0px 0px;
+    }
+    .selectedDonationTextDiv{
+        width: 100%;
+        height: 210px;
+        border-radius: 0px 0px 4px 4px;
+    }
+}
