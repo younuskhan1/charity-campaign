@@ -9,6 +9,7 @@ const Home = () => {
     const [categoryWiseData, setCategoryWiseData] = useState([]);
 
     const donations = useLoaderData();
+    
     const handleSearchButton = ()=> {
         // console.log("just clicked the search button.");
         const searchInputField = document.getElementById("input-field");
@@ -25,6 +26,7 @@ const Home = () => {
             <Banner handleSearchButton = {handleSearchButton}></Banner>
             <div className="cards-parent">
                {
+
                 categoryWiseData?.length ? categoryWiseData?.map((donate,index) => <Card key={index} donate={donate}></Card>) :
                 donations?.map((donate, index) => <Card key={index} donate = {donate}></Card>)
                
