@@ -1,4 +1,4 @@
-Three features of this project is given below:
+Some key features of this project are given below:
 
 1. A responsive navbar using pure html & css : I created a reactive and responsive navbar with using just html and vanilla css. There is no use of JavaScript in this navbar.
 
