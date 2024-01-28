@@ -16,9 +16,15 @@ const Statistics = () => {
                 height={350}
                 series={[12, donatedMoney.length]}
                 options={{
-                    labels:["Total Donation", "Your Donation"]
+                    noData:{text:"No Data Available"},
+                    labels:["Total Donation", "Your Donation"],
+                    colors:['#FF444A', '#00C49F'],
+                    fill: {
+                        colors: ['#FF444A', '#00C49F']
+                      },
+                    
                 }}
-
+                
                 >
 
                 </Chart>
