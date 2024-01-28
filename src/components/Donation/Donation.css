@@ -10,7 +10,9 @@
     justify-content: center;
     margin-bottom: 40px;
 }
-
+.show-all-button-hidden{
+    display: none;
+}
 .show-all-button {
   background-color: #13aa52;
   border: 1px solid #13aa52;

@@ -2,6 +2,9 @@ import PropTypes from 'prop-types'; // ES6
 import "./SelectedDonations.css";
 
 const SelectedDonations = ({element}) => {
+
+    
+
     const {Title, Price, Picture, Color_for_text_and_button_background, Color_for_category_bg, Color_for_card_bg, Category} = element;
     return (
         <div className='selectedItemsGrandParent'>
