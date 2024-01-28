@@ -36,17 +36,26 @@
 @media (max-width: 1025px){
     .each-card{
         width: 95%;  
-    }   
+    } 
+    .card-parent{
+        display: block; 
+    }  
 }
 
 @media (max-width: 769px){
     .each-card{
         width: 95%;  
-    }   
+    }  
+    .card-parent{
+        display: block; 
+    }  
 }
 
 @media (max-width: 426px){
     .each-card{
         width: 100%;
+    } 
+    .card-parent{
+        display: block; 
     }   
 }

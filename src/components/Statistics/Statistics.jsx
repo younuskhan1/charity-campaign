@@ -1,11 +1,89 @@
+import "./Statistics.css";
+import React from 'react';
+import Chart from 'react-apexcharts';
+import { getStoredItemsFromLocalStorage } from "../LocalStorage/LocalStorage";
 
 
 const Statistics = () => {
+
+    const donatedMoney = getStoredItemsFromLocalStorage();
     return (
-        <div>
-            <h1>this is our Statistics Page</h1>
-        </div>
+        <React.Fragment>
+            <div className="container-fluid">
+                <Chart
+                type='pie'
+                width={750}
+                height={350}
+                series={[12, donatedMoney.length]}
+                options={{
+                    labels:["Total Donation", "Your Donation"]
+                }}
+
+                >
+
+                </Chart>
+            </div>
+        </React.Fragment>
     );
 };
 
 export default Statistics;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import "./Statistics.css";
+// import { VictoryPie } from "victory-pie";
+// import { getStoredItemsFromLocalStorage } from "../LocalStorage/LocalStorage";
+
+// const Statistics = () => {
+
+// const donatedMoney = getStoredItemsFromLocalStorage();
+
+
+// const myData = [
+//     { x: "Your Donation", y: donatedMoney.length},
+//     { x: "Total Donation", y: 12 },
+// ];
+
+// return (
+//     <div className="statistics-parent">
+//       <VictoryPie
+//         data={myData}
+//         colorScale={["#00C49F", "#FF444A"]}
+//         radius={100}
+//       />
+//     </div>
+//   );
+// };
+
+// export default Statistics;
+
+
