@@ -27,7 +27,7 @@ const DonationDetailsPage = () => {
     }
     // console.log(donatedItems);
     const {id} = useParams();
-     // console.log(id);
+     console.log(id);
     const donationData = useLoaderData();
     // console.log(donationData);
     const singleDonatedElement = donationData?.find((donation)=> donation.card_id === id);

@@ -41,7 +41,7 @@ const Donation = () => {
                             selectedElements?.slice(0, 4).map((element,index)=><SelectedDonations key={index} element={element}></SelectedDonations>)
                         }
                     </div>
-                    {selectedElements?.length > 4 ? <div className = "show-all-button-parent"><button className={`show-all-button ${isShowAll && "show-all-button-hidden"}`} onClick={()=>setIsShowAll(!isShowAll)}>Show All</button></div> : ""}
+                    {selectedElements?.length > 4 ? <div className = "show-all-button-parent"><button className={`show-all-button ${isShowAll && "show-all-button-hidden"}`} onClick={()=>setIsShowAll(!isShowAll)}>See All</button></div> : ""}
                 </div>
             }   
         </div>
