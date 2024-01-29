@@ -6,3 +6,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.no-donation-heading{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+@media(max-width:426px){
+    .no-donation-heading{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+}
