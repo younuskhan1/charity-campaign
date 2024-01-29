@@ -5,8 +5,9 @@ import { getStoredItemsFromLocalStorage } from "../LocalStorage/LocalStorage";
 
 
 const Statistics = () => {
-
-    const donatedMoney = getStoredItemsFromLocalStorage();
+    
+    const totalDonations = 12;
+    const donationsMade = getStoredItemsFromLocalStorage();
     return (
         <React.Fragment>
             <div className="container-fluid">
@@ -14,7 +15,7 @@ const Statistics = () => {
                 type='pie'
                 width={750}
                 height={350}
-                series={[12, donatedMoney.length]}
+                series={[totalDonations, donationsMade.length]}
                 options={{
                     noData:{text:"No Data Available"},
                     labels:["Total Donation", "Your Donation"],

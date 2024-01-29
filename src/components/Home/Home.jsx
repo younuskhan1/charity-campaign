@@ -27,7 +27,7 @@ const Home = () => {
             Swal.fire({
                 icon: "error",
                 title: "Oops...",
-                text: "Please input me health or education or clothing or food.",
+                text: "Please input me health or education or clothing or food. Do not give me numeric value.",
               });
         }
         else{
