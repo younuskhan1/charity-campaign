@@ -22,7 +22,20 @@ const Statistics = () => {
                     colors:['#FF444A', '#00C49F'],
                     fill: {
                         colors: ['#FF444A', '#00C49F']
-                      },
+                    },
+                    responsive: [{
+                        
+                        breakpoint: 769,
+                        options: {
+                          chart: {
+                            width: 350,
+                            height: 350,
+                          },
+                          legend: {
+                            position: 'bottom'
+                          }
+                        }
+                      }]
                     
                 }}
                 

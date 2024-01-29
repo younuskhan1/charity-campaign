@@ -63,9 +63,12 @@ nav ul li a{
         margin-left: 70px;
     }
 }
-@media (max-width: 769px){ 
+@media (max-width: 700px){ 
     .icon-image{
         margin-left: 40px;
+    }
+    nav ul{
+        margin-right: 40px;
     }
    .checkBtn{
     display: block;
